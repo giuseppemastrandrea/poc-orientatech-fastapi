@@ -1,0 +1,64 @@
+# ========================================================
+# 1. AMBIENTI VIRTUALE E DIPENDENZE (Molto Importante)
+# ========================================================
+# Questi sono i nomi più comuni per le directory dell'ambiente virtuale.
+# NON vanno mai commitati. Si usa un file requirements.txt per tracciare le dipendenze.
+venv/
+.venv/
+env/
+env*/
+*/venv*
+
+# File di lock specifici (se usi Poetry o Conda, ad esempio)
+poetry.lock
+Pipfile.lock
+
+# ========================================================
+# 2. CACHE E FILE DI COMPILAZIONE PYTHON
+# ========================================================
+# Cache di bytecode e compilazione (Python 3.2+).
+__pycache__/
+*.pyc
+*.pyo
+
+# File di distribuzione e build generati
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+
+# ========================================================
+# 3. DATI LOCALI, SECRET E CONFIGURAZIONE
+# ========================================================
+# Variabili d'ambiente con secret (!!! CRITICO !!!)
+.env
+.local_settings.py
+
+# File database locali (se stai usando SQLite o simili)
+*.sqlite3
+*.db
+
+# Dati temporanei o di testing che non devono essere condivisi
+data/temp/
+temp/
+
+# ========================================================
+# 4. FILE SPECIFICI DELLO SVILUPPATORE E DELL'IDE
+# ========================================================
+# File generati da PyCharm
+.idea/
+
+# File generati da VS Code
+.vscode/
+
+# File di backup di versionamento (sempre bene ignorarli)
+*.bak
+*~
+
+# File di sistema operativo
+.DS_Store          # macOS
+Thumbs.db          # Windows
+
+# Log
+*.log
+
